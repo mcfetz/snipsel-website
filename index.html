@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snipsel | Your Knowledge, snipsel by snipsel</title>
+    <meta name="description" content="A premium, glassmorphic personal knowledge management tool. Organize notes, tasks, and ideas in collections. Self-hosted, private, and insanely fast.">
+    
+    <!-- SEO & Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo_192.png" alt="snipsel logo" class="logo-img">
+                <span class="text">snipsel</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="https://github.com/mcfetz/snipsel" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="reveal">Your Knowledge, <br><span class="accent">snipsel by snipsel.</span></h1>
+                <p class="reveal delay-1">Organize notes, tasks, and ideas in a beautiful, glassmorphic environment. Self-hosted, private, and designed for speed.</p>
+                <div class="cta-group reveal delay-2">
+                    <a href="https://try.snipsel.dev" target="_blank" class="btn btn-primary">Try Live Demo</a>
+                    <a href="https://github.com/mcfetz/snipsel" target="_blank" class="btn btn-secondary">View on GitHub</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal delay-3">
+                <div class="mockup-container">
+                    <img src="assets/hero_mockup.png" alt="snipsel UI Mockup" class="mockup-img">
+                    <div class="glass-overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+    </header>
+
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="reveal">Everything in one place</h2>
+                <p class="reveal delay-1">A unified workflow for your daily brain dumps, project notes, and task management.</p>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Collections</h3>
+                    <p>Organize data in themed repositories or use automatic Daily Collections for journaling.</p>
+                </div>
+                
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Smart Tasks</h3>
+                    <p>Reminders, recurring schedules, and three-state statuses to keep you productive.</p>
+                </div>
+                
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-search"></i></div>
+                    <h3>Instant Search</h3>
+                    <p>Find anything across all collections with powerful filters for tags, mentions, and dates.</p>
+                </div>
+
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-at"></i></div>
+                    <h3>Tags & Mentions</h3>
+                    <p>Connect your thoughts with #tags and collaborate using @mentions for assignments.</p>
+                </div>
+
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile First & PWA</h3>
+                    <p>Install snipsel as a Progressive Web App for a seamless native experience on any device.</p>
+                </div>
+
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-history"></i></div>
+                    <h3>Throwback</h3>
+                    <p>Rediscover your past ideas with daily highlights from your history to spark new inspiration.</p>
+                </div>
+
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI Assistant</h3>
+                    <p>Summarize, translate, and expand your notes using your own LLM integration.</p>
+                </div>
+
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>Geo-Aware</h3>
+                    <p>Visualize your notes and tasks on an interactive map using geographic coordinates.</p>
+                </div>
+
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-wifi"></i></div>
+                    <h3>Offline First</h3>
+                    <p>Keep working without internet. Your data is stored locally and syncs automatically when you're back online.</p>
+                </div>
+
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-bell"></i></div>
+                    <h3>Push Notifications</h3>
+                    <p>Stay informed. Receive instant alerts for mentions, shared tasks, and reminders on all your devices.</p>
+                </div>
+
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-paperclip"></i></div>
+                    <h3>File Attachments</h3>
+                    <p>Go beyond text. Upload documents, PDFs, and files directly to your snipsels for easy access.</p>
+                </div>
+
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-sync"></i></div>
+                    <h3>Realtime Sync</h3>
+                    <p>Experience seamless collaboration. Changes appear instantly across all your sessions and shared users.</p>
+                </div>
+
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-id-card"></i></div>
+                    <h3>OIDC Ready</h3>
+                    <p>Connect your favorite identity provider via OpenID Connect for secure, centralized authentication.</p>
+                </div>
+
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-camera"></i></div>
+                    <h3>Unsplash Support</h3>
+                    <p>Access millions of professional photos. Build stunning collection headers with integrated Unsplash search.</p>
+                </div>
+
+                <div class="feature-card glass reveal">
+                    <div class="card-icon"><i class="fas fa-key"></i></div>
+                    <h3>Privacy First</h3>
+                    <p>Self-hosted, 2FA, and Passkeys support. Your knowledge belongs to you alone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="media" class="section section-dark">
+        <div class="container">
+            <div class="media-layout">
+                <div class="media-text reveal">
+                    <h2>Beyond plain text.</h2>
+                    <p>snipsel handles your media with care. Attach images, files, or simply paste a link to see the magic happen.</p>
+                    <ul class="media-list">
+                        <li><i class="fas fa-play-circle"></i> <strong>Visual Cards:</strong> YouTube, Deezer, and Spotify links transform into rich previews.</li>
+                        <li><i class="fas fa-image"></i> <strong>Image Grids:</strong> Upload photos with automatic thumbnail generation and EXIF awareness.</li>
+                        <li><i class="fas fa-paperclip"></i> <strong>Attachments:</strong> Keep documents and files right where they belong.</li>
+                        <li><i class="fas fa-link"></i> <strong>Smart Links:</strong> Internal collection linking for complex knowledge webs.</li>
+                    </ul>
+                </div>
+                <div class="media-visual reveal delay-1">
+                    <div class="card-stack">
+                        <div class="sample-card yt glass"><i class="fab fa-youtube"></i> YouTube Preview</div>
+                        <div class="sample-card dz glass"><i class="fas fa-music"></i> Deezer Card</div>
+                        <div class="sample-card link glass"><i class="fas fa-link"></i> Internal Link</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="reveal">Built for clarity.</h2>
+                <p class="reveal delay-1">Take a look at how snipsel transforms your messy thoughts into structured knowledge.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item glass reveal">
+                    <img src="assets/screen_collections.png" alt="Collections List" class="gallery-img">
+                    <div class="gallery-caption">Collections List</div>
+                </div>
+                <div class="gallery-item glass reveal delay-1">
+                    <img src="assets/screen_collection.png" alt="Single Collection" class="gallery-img">
+                    <div class="gallery-caption">Collection View</div>
+                </div>
+                <div class="gallery-item glass reveal delay-2">
+                    <img src="assets/screen_editor.png" alt="snipsel Editor" class="gallery-img">
+                    <div class="gallery-caption">Advanced Editor</div>
+                </div>
+                <div class="gallery-item glass reveal">
+                    <img src="assets/screen_ai.png" alt="AI Assistant" class="gallery-img">
+                    <div class="gallery-caption">AI Prompting</div>
+                </div>
+                <div class="gallery-item glass reveal delay-1">
+                    <img src="assets/screen_images.png" alt="Images & Attachments" class="gallery-img">
+                    <div class="gallery-caption">Media Gallery</div>
+                </div>
+                <div class="gallery-item glass reveal delay-2">
+                    <img src="assets/screen_tasks.png" alt="Tasks View" class="gallery-img">
+                    <div class="gallery-caption">Unified Tasks Page</div>
+                </div>
+                <div class="gallery-item glass reveal">
+                    <img src="assets/screen_settings.png" alt="Settings & Security" class="gallery-img">
+                    <div class="gallery-caption">Settings & Passkeys</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="section">
+        <div class="container">
+            <div class="glass-cta reveal">
+                <h2>Experience the Speed</h2>
+                <p>Don't just take our word for it. Try out the full snipsel experience on our demo instance.</p>
+                <div class="cta-actions">
+                    <a href="https://try.snipsel.dev" target="_blank" class="btn btn-primary btn-large">Launch Demo Instance</a>
+                </div>
+                <p class="subtext">Use "demo" / "demo123" to explore.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="install" class="section section-install">
+        <div class="container">
+            <div class="section-header">
+                <h2>Host it Yourself</h2>
+                <p>snipsel is built with modern tech: Svelte, Python, SQLite. Deploy easily via Docker.</p>
+            </div>
+            
+            <div class="terminal-container glass reveal">
+                <div class="terminal-header">
+                    <div class="terminal-dot red"></div>
+                    <div class="terminal-dot yellow"></div>
+                    <div class="terminal-dot green"></div>
+                    <span class="terminal-title">bash</span>
+                </div>
+                <div class="terminal-body">
+                    <pre><code><span class="cyan">docker run</span> -d \
+  --name snipsel \
+  -p <span class="green">5000:5000</span> \
+  -v <span class="green">./data:/app/data</span> \
+  -v <span class="green">./uploads:/app/uploads</span> \
+  -e <span class="cyan">SNIPSEL_SECRET_KEY</span>=<span class="green">"your-secure-secret-key"</span> \
+  -e <span class="cyan">SNIPSEL_DOMAIN</span>=<span class="green">"yourdomain.com"</span> \
+  -e <span class="cyan">SNIPSEL_FRONTEND_URL</span>=<span class="green">"https://yourdomain.com"</span> \
+  -e <span class="cyan">SNIPSEL_REGISTRATION_ENABLED</span>=<span class="green">1</span> \
+  ghcr.io/mcfetz/snipsel:latest</code></pre>
+                </div>
+            </div>
+            
+            <div class="install-footer">
+                <a href="https://github.com/mcfetz/snipsel" class="github-full-link"><i class="fab fa-github"></i> View Documentation on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="assets/logo_192.png" alt="snipsel logo" class="logo-img">
+                        <span class="text">snipsel</span>
+                    </div>
+                    <p>Designed and built for modern knowledge management.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://snipsel.dev" target="_blank">snipsel.dev</a></li>
+                        <li><a href="https://try.snipsel.dev" target="_blank">Demo Instance</a></li>
+                        <li><a href="https://github.com/mcfetz/snipsel" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 snipsel. Open Source Software.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
