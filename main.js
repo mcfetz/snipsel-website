@@ -52,3 +52,62 @@ window.addEventListener('mousemove', (e) => {
         blob.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
     });
 });
+
+// Hero Mockup Slideshow
+const slideImages = [
+    'assets/hero_mockup.png',
+    'assets/screen_collections.png',
+    'assets/screen_collection.png',
+    'assets/screen_editor.png',
+    'assets/screen_ai.png',
+    'assets/screen_images.png',
+    'assets/screen_tasks.png',
+    'assets/screen_settings.png'
+];
+
+let currentSlide = 0;
+const slideBase = document.getElementById('slide-base');
+const slideTop = document.getElementById('slide-top');
+
+if (slideBase && slideTop) {
+    const preloadImage = (url) => {
+        return new Promise((resolve) => {
+            const img = new Image();
+            img.onload = () => resolve(url);
+            img.onerror = () => resolve(url); // ignore errors
+            img.src = url;
+        });
+    };
+
+    setInterval(async () => {
+        let nextSlide = (currentSlide + 1) % slideImages.length;
+        let nextUrl = slideImages[nextSlide];
+        
+        // Preload next image before showing to avoid flicker
+        await preloadImage(nextUrl);
+
+        // Put next image in top (invisible) layer
+        slideTop.src = nextUrl;
+        
+        // Fade in top image
+        slideTop.style.opacity = 1;
+
+        // Wait for CSS fade to finish (1000ms)
+        setTimeout(() => {
+            // Update base image so it sits behind
+            slideBase.src = nextUrl;
+            
+            // Instantly hide top image again (without transition visually affecting anything)
+            slideTop.style.transition = 'none';
+            slideTop.style.opacity = 0;
+            
+            // Re-apply transition for next time
+            setTimeout(() => {
+                slideTop.style.transition = 'opacity 1s ease-in-out';
+            }, 50);
+            
+            currentSlide = nextSlide;
+        }, 1000); 
+
+    }, 3000);
+}
