@@ -58,6 +58,8 @@ const slideImages = [
     'assets/hero_mockup.png',
     'assets/screen_collections.png',
     'assets/screen_collection.png',
+    'assets/screen_cards.png',
+    'assets/screen_cards2.png',
     'assets/screen_editor.png',
     'assets/screen_ai.png',
     'assets/screen_images.png',
@@ -110,4 +112,46 @@ if (slideBase && slideTop) {
         }, 1000); 
 
     }, 3000);
+}
+
+// Lightbox Logic
+const lightbox = document.getElementById('lightbox');
+const imgLightbox = document.getElementById('img-lightbox');
+const lightboxCaption = document.getElementById('lightbox-caption');
+const closeBtn = document.querySelector('.lightbox-close');
+
+if (lightbox && imgLightbox) {
+    document.querySelectorAll('.gallery-item').forEach(item => {
+        item.style.cursor = 'pointer';
+        item.addEventListener('click', () => {
+            const img = item.querySelector('.gallery-img');
+            const caption = item.querySelector('.gallery-caption');
+            
+            imgLightbox.src = img.src;
+            lightboxCaption.textContent = caption.textContent;
+            lightbox.classList.add('show');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+    });
+
+    const closeLightbox = () => {
+        lightbox.classList.remove('show');
+        document.body.style.overflow = 'auto'; // Restore scrolling
+    };
+
+    closeBtn.addEventListener('click', closeLightbox);
+
+    // Close when clicking outside the image
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape" && lightbox.classList.contains('show')) {
+            closeLightbox();
+        }
+    });
 }

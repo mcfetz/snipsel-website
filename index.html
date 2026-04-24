@@ -43,7 +43,7 @@
                 <h1 class="reveal">Your Knowledge, <br><span class="accent">snipsel by snipsel.</span></h1>
                 <p class="reveal delay-1">Organize notes, tasks, and ideas in a beautiful, glassmorphic environment. Self-hosted, private, and designed for speed.</p>
                 <div class="cta-group reveal delay-2">
-                    <a href="https://try.snipsel.dev" target="_blank" class="btn btn-primary">Try Live Demo</a>
+                    <a href="#demo" class="btn btn-primary">Try Live Demo</a>
                     <a href="https://github.com/mcfetz/snipsel" target="_blank" class="btn btn-secondary">View on GitHub</a>
                 </div>
             </div>
@@ -169,7 +169,7 @@
                     <h2>Beyond plain text.</h2>
                     <p>snipsel handles your media with care. Attach images, files, or simply paste a link to see the magic happen.</p>
                     <ul class="media-list">
-                        <li><i class="fas fa-play-circle"></i> <strong>Visual Cards:</strong> YouTube, Deezer, and Spotify links transform into rich previews.</li>
+                        <li><i class="fas fa-play-circle"></i> <strong>Visual Cards:</strong> YouTube and Deezer links transform into rich previews.</li>
                         <li><i class="fas fa-image"></i> <strong>Image Grids:</strong> Upload photos with automatic thumbnail generation and EXIF awareness.</li>
                         <li><i class="fas fa-paperclip"></i> <strong>Attachments:</strong> Keep documents and files right where they belong.</li>
                         <li><i class="fas fa-link"></i> <strong>Smart Links:</strong> Internal collection linking for complex knowledge webs.</li>
@@ -203,6 +203,14 @@
                     <div class="gallery-caption">Collection View</div>
                 </div>
                 <div class="gallery-item glass reveal delay-2">
+                    <img src="assets/screen_cards.png" alt="Card Views" class="gallery-img">
+                    <div class="gallery-caption">Card Views</div>
+                </div>
+                <div class="gallery-item glass reveal">
+                    <img src="assets/screen_cards2.png" alt="Media & Maps" class="gallery-img">
+                    <div class="gallery-caption">Media & Web Cards</div>
+                </div>
+                <div class="gallery-item glass reveal delay-1">
                     <img src="assets/screen_editor.png" alt="snipsel Editor" class="gallery-img">
                     <div class="gallery-caption">Advanced Editor</div>
                 </div>
@@ -297,6 +305,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="img-lightbox">
+        <div id="lightbox-caption"></div>
+    </div>
 
     <script src="main.js"></script>
 </body>
