@@ -61,6 +61,7 @@ const slideImages = [
     'assets/screen_cards.png',
     'assets/screen_cards2.png',
     'assets/screen_editor.png',
+    'assets/screen_mermaid.png',
     'assets/screen_ai.png',
     'assets/screen_images.png',
     'assets/screen_tasks.png',

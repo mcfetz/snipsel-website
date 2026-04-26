@@ -387,9 +387,10 @@ h1, h2, h3, .logo .text {
     font-size: 1.5rem;
 }
 
-.sample-card.yt { border-left: 4px solid #f00; transform: rotateX(10deg) rotateY(-10deg) translateZ(50px); }
+.sample-card.yt { border-left: 4px solid #f00; transform: rotateX(10deg) rotateY(-10deg) translateZ(75px); }
+.sample-card.sp { border-left: 4px solid #1db954; transform: rotateX(10deg) rotateY(-10deg) translateZ(50px); }
 .sample-card.dz { border-left: 4px solid #00c7f2; transform: rotateX(10deg) rotateY(-10deg) translateZ(25px); }
-.sample-card.link { border-left: 4px solid var(--accent-color); transform: rotateX(10deg) rotateY(-10deg); }
+.sample-card.mm { border-left: 4px solid var(--accent-color); transform: rotateX(10deg) rotateY(-10deg); }
 
 .card-stack:hover .sample-card {
     transform: rotateX(0) rotateY(0) translateZ(0);
